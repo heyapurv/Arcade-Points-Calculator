@@ -3,11 +3,11 @@ import React from 'react';
 
 const ProgressBar = ({ percentage, color, milestoneName }) => {
     const containerStyles = {
-        height: '20px',
+        height: '30px',
         width: '100%',
-        backgroundColor: 'white',
+        // backgroundColor: 'gray',
         borderRadius: '50px',
-        margin: '30px 0'
+        margin: '20px 0'
     };
 
     const fillerStyles = {
@@ -27,15 +27,20 @@ const ProgressBar = ({ percentage, color, milestoneName }) => {
     };
 
     return (
-        <div style={containerStyles} className='rounded-full'>
+    <>
+        <div className='flex justify-between px-2 '>
+            <span className='text-sm md:text-lg text-slate-200'>{milestoneName}</span>
+            <span className='text-sm md:text-lg text-slate-200'>{`${percentage}% Completed`}</span>
+        </div>
+        <div style={containerStyles} className=' border border-slate-500 border-dashed'>
+            
             <div className='' style={fillerStyles}>
                 <span  style={labelStyles}></span>
             </div>
-            <div className='flex justify-between px-2 py-1 '>
-                <span className='text-sm md:text-lg text-gray-500'>{milestoneName}</span>
-                <span className='text-sm md:text-lg text-gray-500'>{`${percentage}% Completed`}</span>
-            </div>
+           
         </div>
+        
+    </>
     );
 };
 

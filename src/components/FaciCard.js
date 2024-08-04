@@ -23,18 +23,19 @@ const FaciCard = ({ milestone }) => {
     const { totalGame, totalTrivia, totalSkill, totalMilestonePoints } = getMilestoneTotal(milestoneName);
 
     return (
-        <div className='  backdrop-blur-lg p-2 border border-gray-600 rounded-md'>
-        <div className='flex justify-between items-center'>
-            <h1 className='text-sm md:text-xl font-mono text-gray-100'>{`Game (${game}/${totalGame})`}</h1>
-            <h1 className='text-sm md:text-xl font-mono text-gray-100'>{`Trivia (${trivia}/${totalTrivia})`}</h1>
-            <h1 className='text-sm md:text-xl font-mono text-gray-100'>{`Skill Badge (${skill}/${totalSkill})`}</h1>
-        </div>
-        <ProgressBar 
+        <div className='  backdrop-blur-lg p-2 border border-gray-600 rounded-xl'>
+              <ProgressBar 
             percentage={(((game + trivia + skill) / totalMilestonePoints) * 100).toFixed(2)} 
             color={color} 
             milestoneName={milestoneName}  
             className='' 
         />
+        <div className='flex justify-between items-center  '>
+            <h1 className='text-sm md:text-xl font-mono text-gray-500'>{`Game : ${game}/${totalGame}`}</h1>
+            <h1 className='text-sm md:text-xl font-mono text-gray-500'>{`Trivia : ${trivia}/${totalTrivia}`}</h1>
+            <h1 className='text-sm md:text-xl font-mono text-gray-500'>{`Skill Badge : ${skill}/${totalSkill}`}</h1>
+        </div>
+      
     </div>
     
     )
