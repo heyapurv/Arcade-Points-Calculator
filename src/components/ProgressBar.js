@@ -16,7 +16,7 @@ const ProgressBar = ({ percentage, color, milestoneName }) => {
         backgroundColor: `${color}`,
         borderRadius: 'inherit',
         textAlign: 'right',
-        transition: 'width 2s '
+        transition: 'width 3s '
 
     };
 
@@ -34,7 +34,7 @@ const ProgressBar = ({ percentage, color, milestoneName }) => {
         </div>
         <div style={containerStyles} className=' border border-slate-500 border-dashed'>
             
-            <div className='ease-in duration-500' style={fillerStyles}>
+            <div className='ease-in duration-700' style={fillerStyles}>
                 <span  style={labelStyles}></span>
             </div>
            
