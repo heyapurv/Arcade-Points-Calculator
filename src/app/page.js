@@ -17,7 +17,7 @@ export default function Home() {
       <div className="bg-slate-950 font-mono hidden md:block">
       <Header />
       <main className="flex min-h-screen flex-col items-center bg-slate-950">
-        <h1 className="text-center text-xl md:text-2xl font-bold mt-4 text-white underline underline-offset-8">Arcade Points Calculator</h1>
+        <h1 className="text-6xl my-2  pointer-events-none whitespace-pre-wrap bg-gradient-to-b  bg-clip-text text-center  font-semibold leading-none text-transparent from-white to-slate-900/10  ">Arcade Points Calculator</h1>
         <Form />
       </main>
       <Footer />
