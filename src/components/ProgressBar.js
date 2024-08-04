@@ -16,7 +16,7 @@ const ProgressBar = ({ percentage, color, milestoneName }) => {
         backgroundColor: `${color}`,
         borderRadius: 'inherit',
         textAlign: 'right',
-        transition: 'width 2s ease-in'
+        transition: 'width 3s ease-in'
 
     };
 
