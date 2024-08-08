@@ -183,6 +183,8 @@ const Form = () => {
             {result && 
                 <FaciInfo faciData={result.faciCounts}  />
                  }
+
+                 <span className='text-center bg-slate-950 text-white'> Last Updated on : 08-Aug : 10:30pm </span>
 {/* 
             {result && <section className='container'>
                 <h1 className='p-2 font-bold text-center'>All Badge Details</h1>
